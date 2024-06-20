@@ -44,13 +44,13 @@ const musicData = [
     musicPath: "./assets/music/music-4.mp3",
   },
   {
-    backgroundImage: "./assets/images/poster-5.jpg",
-    posterUrl: "./assets/images/poster-5.jpg",
-    title: "Cinta monyet",
-    album: "Goliath",
+    backgroundImage: "./assets/images/poster-7.jpg",
+    posterUrl: "./assets/images/poster-7.jpg",
+    title: "Sad song",
+    album: "Manz diari",
     year: 2022,
-    artist: "Goliath",
-    musicPath: "./assets/music/music-5.mp3",
+    artist: "Manz",
+    musicPath: "./assets/music/music-7.mp3",
   },
 ];
 
