@@ -13,7 +13,7 @@ const musicData = [
     title: "Duka",
     album: "Last Child",
     year: 2022,
-    artist: "LyricFind",
+    artist: "Manz",
     musicPath: "./assets/music/music-1.mp3",
   },
   {
@@ -22,7 +22,7 @@ const musicData = [
     title: "Blue Bird",
     album: "naruto",
     year: 2022,
-    artist: "Ikimonogakari",
+    artist: "Manz",
     musicPath: "./assets/music/music-2.mp3",
   },
   {
@@ -30,8 +30,8 @@ const musicData = [
     posterUrl: "./assets/images/poster-3.jpg",
     title: "Rainych Kanashimi wo Yasashisa ni",
     album: "naruto",
-    year: 2022,
-    artist: "Little Naruto OP 3",
+    year: Little Naruto OP 3,
+    artist: "Manz",
     musicPath: "./assets/music/music-3.mp3",
   },
   {
@@ -51,6 +51,15 @@ const musicData = [
     year: 2021,
     artist: "Manz",
     musicPath: "./assets/music/music-8.mp3",
+  },
+  {
+    backgroundImage: "./assets/images/poster-9.jpg",
+    posterUrl: "./assets/images/poster-9.jpg",
+    title: "bintang hatiku",
+    album: "sad",
+    year: 2022,
+    artist: "Manz",
+    musicPath: "./assets/music/music-9.mp3",
   },
   {
     backgroundImage: "./assets/images/poster-7.jpg",
