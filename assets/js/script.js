@@ -30,7 +30,7 @@ const musicData = [
     posterUrl: "./assets/images/poster-3.jpg",
     title: "Rainych Kanashimi wo Yasashisa ni",
     album: "naruto",
-    year: Little Naruto OP 3,
+    year: 2021,
     artist: "Manz",
     musicPath: "./assets/music/music-3.mp3",
   },
