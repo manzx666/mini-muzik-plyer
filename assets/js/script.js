@@ -8,6 +8,15 @@
 
 const musicData = [
   {
+    backgroundImage: "./assets/images/poster-10.jpg",
+    posterUrl: "./assets/images/poster-10.jpg",
+    title: "Drunk text",
+    album: "sad.",
+    year: 2022,
+    artist: "Manz",
+    musicPath: "./assets/music/music-10.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-1.jpg",
     posterUrl: "./assets/images/poster-1.jpg",
     title: "Duka",
