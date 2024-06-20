@@ -26,6 +26,15 @@ const musicData = [
     musicPath: "./assets/music/music-1.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-11.jpg",
+    posterUrl: "./assets/images/poster-11.jpg",
+    title: "Oh my kadhale",
+    album: "sad",
+    year: 2024,
+    artist: "zubir khan x ezra kairo",
+    musicPath: "./assets/music/music-11.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-2.jpg",
     posterUrl: "./assets/images/poster-2.jpg",
     title: "Blue Bird",
