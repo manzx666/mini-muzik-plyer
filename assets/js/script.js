@@ -50,7 +50,7 @@ const musicData = [
     album: "sad",
     year: 2021,
     artist: "Manz",
-    musicPath: "./assets/music/music-4.mp3",
+    musicPath: "./assets/music/music-8.mp3",
   },
   {
     backgroundImage: "./assets/images/poster-7.jpg",
