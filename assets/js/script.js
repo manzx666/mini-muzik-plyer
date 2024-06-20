@@ -40,7 +40,16 @@ const musicData = [
     title: "ロクデナシ  ただ声一つ",
     album: "sad",
     year: 2022,
-    artist: "Rokudenashi",
+    artist: "Manz",
+    musicPath: "./assets/music/music-4.mp3",
+  },
+  {
+    backgroundImage: "./assets/images/poster-8.jpg",
+    posterUrl: "./assets/images/poster-8.jpg",
+    title: "Baik baik sayang",
+    album: "sad",
+    year: 2021,
+    artist: "Manz",
     musicPath: "./assets/music/music-4.mp3",
   },
   {
