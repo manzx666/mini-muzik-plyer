@@ -80,6 +80,15 @@ const musicData = [
     musicPath: "./assets/music/music-9.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-14.jpg",
+    posterUrl: "./assets/images/poster-14.jpg",
+    title: "sekecewa itu",
+    album: "Angga candra",
+    year: 2022,
+    artist: "Manz",
+    musicPath: "./assets/music/music-14.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-13.jpg",
     posterUrl: "./assets/images/poster-13.jpg",
     title: "Clarity nightcore",
