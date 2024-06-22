@@ -80,6 +80,15 @@ const musicData = [
     musicPath: "./assets/music/music-9.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-13.jpg",
+    posterUrl: "./assets/images/poster-13.jpg",
+    title: "Clarity nightcore",
+    album: "zedd feat",
+    year: 2022,
+    artist: "Manz",
+    musicPath: "./assets/music/music-13.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-7.jpg",
     posterUrl: "./assets/images/poster-7.jpg",
     title: "Sad song",
