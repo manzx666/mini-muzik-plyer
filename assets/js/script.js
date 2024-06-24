@@ -101,7 +101,7 @@ const musicData = [
     backgroundImage: "./assets/images/poster-15.jpg",
     posterUrl: "./assets/images/poster-15.jpg",
     title: "Selamanya",
-    album: "Ucop",
+    album: "Usop",
     year: 2020,
     artist: "Manz",
     musicPath: "./assets/music/music-15.mp3",
