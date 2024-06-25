@@ -107,6 +107,15 @@ const musicData = [
     musicPath: "./assets/music/music-15.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-16.jpg",
+    posterUrl: "./assets/images/poster-16.jpg",
+    title: "Pertama kali",
+    album: "shaa",
+    year: 2017,
+    artist: "Manz",
+    musicPath: "./assets/music/music-16.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-7.jpg",
     posterUrl: "./assets/images/poster-7.jpg",
     title: "Sad song",
