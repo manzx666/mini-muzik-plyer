@@ -62,6 +62,15 @@ const musicData = [
     musicPath: "./assets/music/music-4.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-17.jpg",
+    posterUrl: "./assets/images/poster-17.jpg",
+    title: "Dimana hatimu sped-up",
+    album: "papinka",
+    year: 2022,
+    artist: "Manz",
+    musicPath: "./assets/music/music-17.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-8.jpg",
     posterUrl: "./assets/images/poster-8.jpg",
     title: "Baik baik sayang",
