@@ -34,6 +34,15 @@ const musicData = [
     artist: "zubir khan x ezra kairo",
     musicPath: "./assets/music/music-11.mp3",
   },
+   {
+    backgroundImage: "./assets/images/poster-18.jpg",
+    posterUrl: "./assets/images/poster-18.jpg",
+    title: "Est-ce que tu m'aimes",
+    album: "Erwin gaje",
+    year: 2017,
+    artist: "Manz",
+    musicPath: "./assets/music/music-18.mp3",
+  },
   {
     backgroundImage: "./assets/images/poster-2.jpg",
     posterUrl: "./assets/images/poster-2.jpg",
