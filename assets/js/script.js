@@ -80,6 +80,15 @@ const musicData = [
     musicPath: "./assets/music/music-17.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-19.jpg",
+    posterUrl: "./assets/images/poster-19.jpg",
+    title: "Takkan pergi (speed up) ",
+    album: "Hyper act",
+    year: 2110,
+    artist: "Manz",
+    musicPath: "./assets/music/music-19.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-8.jpg",
     posterUrl: "./assets/images/poster-8.jpg",
     title: "Baik baik sayang",
