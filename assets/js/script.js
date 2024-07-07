@@ -10,7 +10,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-10.jpg",
     posterUrl: "./assets/images/poster-10.jpg",
-    title: "Drunk text",
+    title: "𝘿𝙧𝙪𝙣𝙠 𝙏𝙚𝙭𝙩",
     album: "sad.",
     year: 2007,
     artist: "Manz",
@@ -19,7 +19,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-1.jpg",
     posterUrl: "./assets/images/poster-1.jpg",
-    title: "Duka",
+    title: "𝘿𝙪𝙠𝙖",
     album: "Last Child",
     year: 2007,
     artist: "Manz",
@@ -28,7 +28,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-11.jpg",
     posterUrl: "./assets/images/poster-11.jpg",
-    title: "Oh my kadhale",
+    title: "𝙊𝙝 𝙢𝙮 𝙠𝙖𝙙𝙝𝙖𝙡𝙚",
     album: "sad",
     year: 2007,
     artist: "zubir khan x ezra kairo",
@@ -37,7 +37,7 @@ const musicData = [
    {
     backgroundImage: "./assets/images/poster-18.jpg",
     posterUrl: "./assets/images/poster-18.jpg",
-    title: "Est-ce que tu m'aimes",
+    title: "𝙀𝙨𝙩-𝙘𝙚 𝙦𝙪𝙚 𝙩𝙪 𝙢'𝙖𝙞𝙢𝙚𝙨",
     album: "Erwin gaje",
     year: 2007,
     artist: "Manz",
@@ -46,7 +46,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-0.jpg",
     posterUrl: "./assets/images/poster-0.jpg",
-    title: "Blue Bird",
+    title: "𝘽𝙡𝙪𝙚 𝘽𝙞𝙧𝙙",
     album: "naruto",
     year: 2007,
     artist: "Manz",
@@ -55,7 +55,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-3.jpg",
     posterUrl: "./assets/images/poster-3.jpg",
-    title: "Rainych Kanashimi wo Yasashisa ni",
+    title: "𝙍𝙖𝙞𝙣𝙮𝙘𝙝 𝙆𝙖𝙣𝙖𝙨𝙝𝙞𝙢𝙞 𝙬𝙤 𝙔𝙖𝙨𝙖𝙨𝙝𝙞𝙨𝙖 𝙣𝙞",
     album: "naruto",
     year: 2007,
     artist: "Manz",
@@ -73,7 +73,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-17.jpg",
     posterUrl: "./assets/images/poster-17.jpg",
-    title: "Dimana hatimu sped-up",
+    title: "𝘿𝙞𝙢𝙖𝙣𝙖 𝙝𝙖𝙩𝙞𝙢𝙪 𝙨𝙥𝙚𝙙-𝙪𝙥",
     album: "papinka",
     year: 2007,
     artist: "Manz",
@@ -82,7 +82,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-19.jpg",
     posterUrl: "./assets/images/poster-19.jpg",
-    title: "Takkan pergi (speed up) ",
+    title: "𝙏𝙖𝙠𝙠𝙖𝙣 𝙥𝙚𝙧𝙜𝙞 (𝙨𝙥𝙚𝙚𝙙 𝙪𝙥)",
     album: "Hyper act",
     year: 2007,
     artist: "Manz",
@@ -91,7 +91,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-20.jpg",
     posterUrl: "./assets/images/poster-20.jpg",
-    title: "Tercipta Satu Senyuman",
+    title: "𝙏𝙚𝙧𝙘𝙞𝙥𝙩𝙖 𝙎𝙖𝙩𝙪 𝙎𝙚𝙣𝙮𝙪𝙢𝙖𝙣",
     album: "Reedwann",
     year: 2007,
     artist: "Manz",
@@ -100,7 +100,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-8.jpg",
     posterUrl: "./assets/images/poster-8.jpg",
-    title: "Baik baik sayang",
+    title: "𝘽𝙖𝙞𝙠 𝙗𝙖𝙞𝙠 𝙨𝙖𝙮𝙖𝙣𝙜",
     album: "sad",
     year: 2007,
     artist: "Manz",
@@ -109,7 +109,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-9.jpg",
     posterUrl: "./assets/images/poster-9.jpg",
-    title: "bintang hatiku",
+    title: "𝙗𝙞𝙣𝙩𝙖𝙣𝙜 𝙝𝙖𝙩𝙞𝙠𝙪",
     album: "sad",
     year: 2007,
     artist: "Manz",
@@ -118,7 +118,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-14.jpg",
     posterUrl: "./assets/images/poster-14.jpg",
-    title: "sekecewa itu",
+    title: "𝙨𝙚𝙠𝙚𝙘𝙚𝙬𝙖 𝙞𝙩𝙪",
     album: "Angga candra",
     year: 2007,
     artist: "Manz",
@@ -127,7 +127,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-13.jpg",
     posterUrl: "./assets/images/poster-13.jpg",
-    title: "Clarity nightcore",
+    title: "𝘾𝙡𝙖𝙧𝙞𝙩𝙮 𝙣𝙞𝙜𝙝𝙩𝙘𝙤𝙧𝙚",
     album: "zedd feat",
     year: 2007,
     artist: "Manz",
@@ -136,7 +136,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-15.jpg",
     posterUrl: "./assets/images/poster-15.jpg",
-    title: "Selamanya",
+    title: "𝙎𝙚𝙡𝙖𝙢𝙖𝙣𝙮𝙖",
     album: "Usop",
     year: 2007,
     artist: "Manz",
@@ -145,7 +145,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-16.jpg",
     posterUrl: "./assets/images/poster-16.jpg",
-    title: "Pertama kali",
+    title: "𝙋𝙚𝙧𝙩𝙖𝙢𝙖 𝙠𝙖𝙡𝙞",
     album: "shaa",
     year: 2007,
     artist: "Manz",
@@ -154,7 +154,7 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-7.jpg",
     posterUrl: "./assets/images/poster-7.jpg",
-    title: "Sad song",
+    title: "𝙎𝙖𝙙 𝙎𝙤𝙣𝙜 𝙏𝙞𝙠𝙩𝙤𝙠 ♫",
     album: "Manz diari",
     year: 2007,
     artist: "Manz",
