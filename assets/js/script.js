@@ -44,8 +44,8 @@ const musicData = [
     musicPath: "./assets/music/music-18.mp3",
   },
   {
-    backgroundImage: "./assets/images/poster-2.jpg",
-    posterUrl: "./assets/images/poster-2.jpg",
+    backgroundImage: "./assets/images/poster-0.jpg",
+    posterUrl: "./assets/images/poster-0.jpg",
     title: "Blue Bird",
     album: "naruto",
     year: 2007,
