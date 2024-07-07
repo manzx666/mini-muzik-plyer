@@ -94,8 +94,8 @@ const musicData = [
     title: "Tercipta Satu Senyuman",
     album: "Reedwann",
     year: 2007,
-    artist: "zubir khan x ezra kairo",
-    musicPath: "./assets/music/music-11.mp3",
+    artist: "Manz",
+    musicPath: "./assets/music/music-20.mp3",
   },
   {
     backgroundImage: "./assets/images/poster-8.jpg",
