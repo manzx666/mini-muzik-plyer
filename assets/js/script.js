@@ -98,6 +98,15 @@ const musicData = [
     musicPath: "./assets/music/music-20.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-21.jpg",
+    posterUrl: "./assets/images/poster-21.jpg",
+    title: "𝘼𝙨𝙖𝙡 𝙆𝙖𝙪 𝘽𝙖𝙝𝙖𝙜𝙞𝙖",
+    album: "Armada",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-21.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-8.jpg",
     posterUrl: "./assets/images/poster-8.jpg",
     title: "𝘽𝙖𝙞𝙠 𝙗𝙖𝙞𝙠 𝙨𝙖𝙮𝙖𝙣𝙜",
