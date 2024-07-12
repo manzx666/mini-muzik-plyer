@@ -17,6 +17,15 @@ const musicData = [
     musicPath: "./assets/music/music-10.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-24.jpg",
+    posterUrl: "./assets/images/poster-24.jpg",
+    title: "𝙍𝙚𝙘𝙠𝙡𝙚𝙨𝙨",
+    album: "Madison Beer",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-24.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-1.jpg",
     posterUrl: "./assets/images/poster-1.jpg",
     title: "𝘿𝙪𝙠𝙖",
