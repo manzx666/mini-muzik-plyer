@@ -161,6 +161,15 @@ const musicData = [
     musicPath: "./assets/music/music-16.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-22.jpg",
+    posterUrl: "./assets/images/poster-22.jpg",
+    title: "𝙎𝙤𝙣𝙜 𝙏𝙞𝙠𝙩𝙤𝙠",
+    album: "TIKTOK",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-22.mp3",
+    },    
+    {  
     backgroundImage: "./assets/images/poster-7.jpg",
     posterUrl: "./assets/images/poster-7.jpg",
     title: "𝙎𝙖𝙙 𝙎𝙤𝙣𝙜 𝙏𝙞𝙠𝙩𝙤𝙠 ♫",
