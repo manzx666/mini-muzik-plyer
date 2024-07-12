@@ -26,6 +26,15 @@ const musicData = [
     musicPath: "./assets/music/music-24.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-25.jpg",
+    posterUrl: "./assets/images/poster-25.jpg",
+    title: "𝙃𝙖𝙥𝙥𝙞𝙚𝙧",
+    album: "Olivia Rodrigo",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-25.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-1.jpg",
     posterUrl: "./assets/images/poster-1.jpg",
     title: "𝘿𝙪𝙠𝙖",
