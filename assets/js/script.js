@@ -161,6 +161,15 @@ const musicData = [
     musicPath: "./assets/music/music-16.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-23.jpg",
+    posterUrl: "./assets/images/poster-23.jpg",
+    title: "𝙆𝙪 𝙅𝙪𝙜𝙖 𝙢𝙚𝙣𝙘𝙞𝙣𝙩𝙖𝙞𝙢𝙪",
+    album: "saiful",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-23.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-22.jpg",
     posterUrl: "./assets/images/poster-22.jpg",
     title: "𝙎𝙤𝙣𝙜 𝙏𝙞𝙠𝙩𝙤𝙠",
