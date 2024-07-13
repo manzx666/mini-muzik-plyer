@@ -125,6 +125,15 @@ const musicData = [
     musicPath: "./assets/music/music-28.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-29.jpg",
+    posterUrl: "./assets/images/poster-29.jpg",
+    title: "𝘾𝙞𝙣𝙩𝙖 𝙋𝙖𝙣𝙙𝙖𝙣𝙜 𝙋𝙚𝙧𝙩𝙖𝙢𝙖",
+    album: "Reedwann",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-29.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-20.jpg",
     posterUrl: "./assets/images/poster-20.jpg",
     title: "𝙏𝙚𝙧𝙘𝙞𝙥𝙩𝙖 𝙎𝙖𝙩𝙪 𝙎𝙚𝙣𝙮𝙪𝙢𝙖𝙣",
