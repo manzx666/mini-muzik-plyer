@@ -44,6 +44,15 @@ const musicData = [
     musicPath: "./assets/music/music-26.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-30.jpg",
+    posterUrl: "./assets/images/poster-30.jpg",
+    title: "𝙞𝙢𝙥𝙤𝙨𝙨𝙞𝙗𝙡𝙚 𝙨𝙥𝙚𝙚𝙙 𝙪𝙥",
+    album: "James Arthur",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-30.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-1.jpg",
     posterUrl: "./assets/images/poster-1.jpg",
     title: "𝘿𝙪𝙠𝙖",
