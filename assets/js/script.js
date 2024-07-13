@@ -116,6 +116,15 @@ const musicData = [
     musicPath: "./assets/music/music-19.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-28.jpg",
+    posterUrl: "./assets/images/poster-28.jpg",
+    title: "𝘼𝙙𝙖𝙠𝙖𝙝 𝙞𝙣𝙞 𝙢𝙞𝙢𝙥𝙞",
+    album: "Reedwann",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-28.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-20.jpg",
     posterUrl: "./assets/images/poster-20.jpg",
     title: "𝙏𝙚𝙧𝙘𝙞𝙥𝙩𝙖 𝙎𝙖𝙩𝙪 𝙎𝙚𝙣𝙮𝙪𝙢𝙖𝙣",
