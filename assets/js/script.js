@@ -197,6 +197,15 @@ const musicData = [
     musicPath: "./assets/music/music-23.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-27.jpg",
+    posterUrl: "./assets/images/poster-27.jpg",
+    title: "𝙎𝙞𝙣𝙖𝙧 𝙋𝙚𝙡𝙖𝙣𝙜𝙞",
+    album: "project band",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-27.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-22.jpg",
     posterUrl: "./assets/images/poster-22.jpg",
     title: "𝙎𝙤𝙣𝙜 𝙏𝙞𝙠𝙩𝙤𝙠",
