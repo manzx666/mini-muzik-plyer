@@ -35,6 +35,15 @@ const musicData = [
     musicPath: "./assets/music/music-25.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-26.jpg",
+    posterUrl: "./assets/images/poster-26.jpg",
+    title: "𝘿𝙖𝙣𝙙𝙚𝙡𝙞𝙤𝙣𝙨",
+    album: "Ruth B.",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-26.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-1.jpg",
     posterUrl: "./assets/images/poster-1.jpg",
     title: "𝘿𝙪𝙠𝙖",
