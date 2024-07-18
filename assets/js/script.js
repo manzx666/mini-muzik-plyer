@@ -214,6 +214,15 @@ const musicData = [
     artist: "Manz",
     musicPath: "./assets/music/music-16.mp3",
   },
+   {
+    backgroundImage: "./assets/images/poster-31.jpg",
+    posterUrl: "./assets/images/poster-31.jpg",
+    title: "𝘼𝙠𝙪 𝙋𝙖𝙨𝙩𝙞 𝙏𝙖𝙪",
+    album: "Bagindas",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-31.mp3",
+  },
   {
     backgroundImage: "./assets/images/poster-23.jpg",
     posterUrl: "./assets/images/poster-23.jpg",
