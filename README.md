@@ -48,4 +48,4 @@ If you want to contact with me you can reach me at [Twitter](https://www.twitter
 
 ### License
 
-This project is **free to use** and does not contains any license.
+This project is **free to use** https://sg-play.mobilelegends.com/thirdpartytournament/and does not contains any license.
