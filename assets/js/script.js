@@ -214,6 +214,15 @@ const musicData = [
     artist: "Manz",
     musicPath: "./assets/music/music-16.mp3",
   },
+  {
+    backgroundImage: "./assets/images/poster-33.jpg",
+    posterUrl: "./assets/images/poster-33.jpg",
+    title: "𝙃𝙖𝙡 𝙃𝙚𝙗𝙖𝙩",
+    album: "Govinda",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-33.mp3",
+  },
    {
     backgroundImage: "./assets/images/poster-31.jpg",
     posterUrl: "./assets/images/poster-31.jpg",
