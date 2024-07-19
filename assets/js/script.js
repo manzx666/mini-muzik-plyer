@@ -224,6 +224,15 @@ const musicData = [
     musicPath: "./assets/music/music-31.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-32.jpg",
+    posterUrl: "./assets/images/poster-32.jpg",
+    title: "𝘼𝙠𝙪 𝙔𝙖𝙣𝙜 𝙟𝙖𝙩𝙪𝙝 𝘾𝙞𝙣𝙩𝙖",
+    album: "Dudy oris",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-32.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-23.jpg",
     posterUrl: "./assets/images/poster-23.jpg",
     title: "𝙆𝙪 𝙅𝙪𝙜𝙖 𝙢𝙚𝙣𝙘𝙞𝙣𝙩𝙖𝙞𝙢𝙪",
