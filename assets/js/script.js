@@ -53,6 +53,15 @@ const musicData = [
     musicPath: "./assets/music/music-30.mp3",
   },
   {
+    backgroundImage: "./assets/images/poster-13.jpg",
+    posterUrl: "./assets/images/poster-13.jpg",
+    title: "𝘾𝙡𝙖𝙧𝙞𝙩𝙮 𝙣𝙞𝙜𝙝𝙩𝙘𝙤𝙧𝙚",
+    album: "zedd feat",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-13.mp3",
+  },
+  {
     backgroundImage: "./assets/images/poster-1.jpg",
     posterUrl: "./assets/images/poster-1.jpg",
     title: "𝘿𝙪𝙠𝙖",
@@ -188,15 +197,6 @@ const musicData = [
     musicPath: "./assets/music/music-14.mp3",
   },
   {
-    backgroundImage: "./assets/images/poster-13.jpg",
-    posterUrl: "./assets/images/poster-13.jpg",
-    title: "𝘾𝙡𝙖𝙧𝙞𝙩𝙮 𝙣𝙞𝙜𝙝𝙩𝙘𝙤𝙧𝙚",
-    album: "zedd feat",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-13.mp3",
-  },
-  {
     backgroundImage: "./assets/images/poster-15.jpg",
     posterUrl: "./assets/images/poster-15.jpg",
     title: "𝙎𝙚𝙡𝙖𝙢𝙖𝙣𝙮𝙖",
@@ -213,6 +213,15 @@ const musicData = [
     year: 2007,
     artist: "Manz",
     musicPath: "./assets/music/music-16.mp3",
+  },
+   {
+    backgroundImage: "./assets/images/poster-34.jpg",
+    posterUrl: "./assets/images/poster-34.jpg",
+    title: "𝙋𝙚𝙧𝙘𝙖𝙮𝙖 𝙋𝙖𝙙𝙖𝙠𝙪",
+    album: "Ungu",
+    year: 2007,
+    artist: "Manz",
+    musicPath: "./assets/music/music-34.mp3",
   },
   {
     backgroundImage: "./assets/images/poster-33.jpg",
