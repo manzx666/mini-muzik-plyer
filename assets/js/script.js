@@ -24,15 +24,12 @@ let updateTimer;
  * all music information
  */
 
-const musicData = [
+const music_list = [
   {
-    backgroundImage: "./assets/images/poster-10.jpg",
-    posterUrl: "./assets/images/poster-10.jpg",
-    title: "𝘿𝙧𝙪𝙣𝙠 𝙏𝙚𝙭𝙩",
-    album: "sad.",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-10.mp3",
+     img : './assets/images/poster-10.jpg',
+        name : 'Drunk Text',
+        artist : 'manz',
+        music : './assets/music/music-10.mp3'
   },
   {
     backgroundImage: "./assets/images/poster-24.jpg",
