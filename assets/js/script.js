@@ -70,15 +70,6 @@ const musicData = [
     artist: "Manz",
     musicPath: "./assets/music/music-1.mp3",
   },
-  {
-    backgroundImage: "./assets/images/poster-11.jpg",
-    posterUrl: "./assets/images/poster-11.jpg",
-    title: "𝙊𝙝 𝙢𝙮 𝙠𝙖𝙙𝙝𝙖𝙡𝙚",
-    album: "sad",
-    year: 2007,
-    artist: "zubir khan x ezra kairo",
-    musicPath: "./assets/music/music-11.mp3",
-  },
    {
     backgroundImage: "./assets/images/poster-18.jpg",
     posterUrl: "./assets/images/poster-18.jpg",
@@ -114,6 +105,15 @@ const musicData = [
     year: 2007,
     artist: "Manz",
     musicPath: "./assets/music/music-4.mp3",
+  },
+  {
+    backgroundImage: "./assets/images/poster-11.jpg",
+    posterUrl: "./assets/images/poster-11.jpg",
+    title: "𝙊𝙝 𝙢𝙮 𝙠𝙖𝙙𝙝𝙖𝙡𝙚",
+    album: "sad",
+    year: 2007,
+    artist: "zubir khan x ezra kairo",
+    musicPath: "./assets/music/music-11.mp3",
   },
   {
     backgroundImage: "./assets/images/poster-17.jpg",
