@@ -34,16 +34,16 @@ const music_list = [
     music: "assets/music/music-24.mp3",
   },
   {
-    img: "assets/images/Gazapizm.jpg",
-    name: "Unutulacak Dunler",
-    artist: "Gazapizm",
-    music: "assets/music/Unutulacak Dunler.mp3",
+    img: "assets/images/poster-26.jpg",
+    name: "𝘿𝙖𝙣𝙙𝙚𝙡𝙞𝙤𝙣𝙨",
+    artist: "Manz",
+    music: "assets/music/music-26.mp3",
   },
   {
-    img: "assets/images/AID.jpg",
-    name: "Boyuk Umidler",
-    artist: "Orkhan Zeynalli",
-    music: "assets/music/Boyuk Umidler.mp3",
+    img: "assets/images/poster-30.jpg",
+    name: "𝙞𝙢𝙥𝙤𝙨𝙨𝙞𝙗𝙡𝙚 𝙨𝙥𝙚𝙚𝙙 𝙪𝙥",
+    artist: "Manz",
+    music: "assets/music/music-30.mp3",
   },
 ];
 
