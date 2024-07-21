@@ -28,10 +28,10 @@ const music_list = [
     music: "assets/music/music-10.mp3",
   },
   {
-    img: "assets/images/ceza.jpg",
-    name: "Neyim Var Ki",
-    artist: "CEZA",
-    music: "assets/music/Neyim Var Ki.mp3",
+    img: "assets/images/poster-24.jpg",
+    name: "𝙍𝙚𝙘𝙠𝙡𝙚𝙨𝙨",
+    artist: "Manz",
+    music: "assets/music/music-24.mp3",
   },
   {
     img: "assets/images/Gazapizm.jpg",
