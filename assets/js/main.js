@@ -45,6 +45,18 @@ const music_list = [
     artist: "Manz",
     music: "assets/music/music-30.mp3",
   },
+   {
+    img: "assets/images/poster-19.jpg",
+    name: "𝙏𝙖𝙠𝙠𝙖𝙣 𝙥𝙚𝙧𝙜𝙞 (𝙨𝙥𝙚𝙚𝙙 𝙪𝙥)",
+    artist: "Manz",
+    music: "assets/music/music-19.mp3",
+  },
+   {
+    img: "assets/images/poster-21.jpg",
+    name: "𝘼𝙨𝙖𝙡 𝙆𝙖𝙪 𝘽𝙖𝙝𝙖𝙜𝙞𝙖",
+    artist: "Manz",
+    music: "assets/music/music-21.mp3",
+  },
 ];
 
 loadTrack(track_index);
