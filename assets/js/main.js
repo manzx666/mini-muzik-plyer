@@ -57,6 +57,36 @@ const music_list = [
     artist: "Manz",
     music: "assets/music/music-21.mp3",
   },
+   {
+    img: "assets/images/poster-14.jpg",
+    name: "𝙨𝙚𝙠𝙚𝙘𝙚𝙬𝙖 𝙞𝙩𝙪",
+    artist: "Manz",
+    music: "assets/music/music-14.mp3",
+  },
+   {
+    img: "assets/images/poster-33.jpg",
+    name: "𝙃𝙖𝙡 𝙃𝙚𝙗𝙖𝙩",
+    artist: "Manz",
+    music: "assets/music/music-33.mp3",
+  },
+    {
+    img: "assets/images/poster-31.jpg",
+    name: "𝘼𝙠𝙪 𝙋𝙖𝙨𝙩𝙞 𝙏𝙖𝙪",
+    artist: "Manz",
+    music: "assets/music/music-31.mp3",
+  },
+   {
+    img: "assets/images/poster-22.jpg",
+    name: "𝙎𝙤𝙣𝙜 𝙏𝙞𝙠𝙩𝙤𝙠",
+    artist: "Manz",
+    music: "assets/music/music-22.mp3",
+  },
+   {
+    img: "assets/images/poster-7.jpg",
+    name: "𝙎𝙖𝙙 𝙎𝙤𝙣𝙜 𝙏𝙞𝙠𝙩𝙤𝙠 ♫",
+    artist: "Manz",
+    music: "assets/music/music-7.mp3",
+  },
 ];
 
 loadTrack(track_index);
