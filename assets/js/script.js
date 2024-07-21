@@ -1,436 +1,266 @@
-let track_name = document.querySelector('.track-name');
-let track_artist = document.querySelector('.track-artist');
+// Coding With Nick
+// Add Tags And Elements
 
-let playpause_btn = document.querySelector('.playpause-track');
-let next_btn = document.querySelector('.next-track');
-let prev_btn = document.querySelector('.prev-track');
-
-let seek_slider = document.querySelector('.seek_slider');
-let volume_slider = document.querySelector('.volume_slider');
-let curr_time = document.querySelector('.current-time');
-let total_duration = document.querySelector('.total-duration');
-let wave = document.getElementById('wave');
-let randomIcon = document.querySelector('.fa-random');
-let curr_track = document.createElement('audio');
-
-let track_index = 0;
-let isPlaying = false;
-let isRandom = false;
-let updateTimer;
+const container = document.querySelector(".container"),
+    musicImg = container.querySelector(".img-area img"),
+    musicName = container.querySelector(".song-details .name"),
+    musicArtist = container.querySelector(".song-details .artist"),
+    mainAudio = container.querySelector("#main-audio"),
+    playpauseBtn = container.querySelector(".play-pause"),
+    nextBtn = container.querySelector("#next"),
+    prevBtn = container.querySelector("#prev"),
+    progressArea = container.querySelector(".progress-area"),
+    progressBar = container.querySelector(".progress-bar"),
+    musicList = container.querySelector(".music-list"),
+    moreMusicBtn = container.querySelector("#more-music"),
+    closemoreMusic = container.querySelector("#close");
 
 
 
-/**
- * all music information
- */
+let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 
-const music_list = [
-  {
-     img : './assets/images/poster-10.jpg',
-        name : 'Drunk Text',
-        artist : 'manz',
-        music : './assets/music/music-10.mp3'
-  },
-  {
-    backgroundImage: "./assets/images/poster-24.jpg",
-    posterUrl: "./assets/images/poster-24.jpg",
-    title: "𝙍𝙚𝙘𝙠𝙡𝙚𝙨𝙨",
-    album: "Madison Beer",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-24.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-25.jpg",
-    posterUrl: "./assets/images/poster-25.jpg",
-    title: "𝙃𝙖𝙥𝙥𝙞𝙚𝙧",
-    album: "Olivia Rodrigo",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-25.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-26.jpg",
-    posterUrl: "./assets/images/poster-26.jpg",
-    title: "𝘿𝙖𝙣𝙙𝙚𝙡𝙞𝙤𝙣𝙨",
-    album: "Ruth B.",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-26.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-30.jpg",
-    posterUrl: "./assets/images/poster-30.jpg",
-    title: "𝙞𝙢𝙥𝙤𝙨𝙨𝙞𝙗𝙡𝙚 𝙨𝙥𝙚𝙚𝙙 𝙪𝙥",
-    album: "James Arthur",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-30.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-13.jpg",
-    posterUrl: "./assets/images/poster-13.jpg",
-    title: "𝘾𝙡𝙖𝙧𝙞𝙩𝙮 𝙣𝙞𝙜𝙝𝙩𝙘𝙤𝙧𝙚",
-    album: "zedd feat",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-13.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-1.jpg",
-    posterUrl: "./assets/images/poster-1.jpg",
-    title: "𝘿𝙪𝙠𝙖",
-    album: "Last Child",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-1.mp3",
-  },
-   {
-    backgroundImage: "./assets/images/poster-18.jpg",
-    posterUrl: "./assets/images/poster-18.jpg",
-    title: "𝙀𝙨𝙩-𝙘𝙚 𝙦𝙪𝙚 𝙩𝙪 𝙢'𝙖𝙞𝙢𝙚𝙨",
-    album: "Erwin gaje",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-18.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-0.jpg",
-    posterUrl: "./assets/images/poster-0.jpg",
-    title: "𝘽𝙡𝙪𝙚 𝘽𝙞𝙧𝙙",
-    album: "naruto",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-2.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-3.jpg",
-    posterUrl: "./assets/images/poster-3.jpg",
-    title: "𝙍𝙖𝙞𝙣𝙮𝙘𝙝 𝙆𝙖𝙣𝙖𝙨𝙝𝙞𝙢𝙞 𝙬𝙤 𝙔𝙖𝙨𝙖𝙨𝙝𝙞𝙨𝙖 𝙣𝙞",
-    album: "naruto",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-3.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-4.jpg",
-    posterUrl: "./assets/images/poster-4.jpg",
-    title: "ロクデナシ  ただ声一つ",
-    album: "sad",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-4.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-11.jpg",
-    posterUrl: "./assets/images/poster-11.jpg",
-    title: "𝙊𝙝 𝙢𝙮 𝙠𝙖𝙙𝙝𝙖𝙡𝙚",
-    album: "sad",
-    year: 2007,
-    artist: "zubir khan x ezra kairo",
-    musicPath: "./assets/music/music-11.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-17.jpg",
-    posterUrl: "./assets/images/poster-17.jpg",
-    title: "𝘿𝙞𝙢𝙖𝙣𝙖 𝙝𝙖𝙩𝙞𝙢𝙪 𝙨𝙥𝙚𝙙-𝙪𝙥",
-    album: "papinka",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-17.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-19.jpg",
-    posterUrl: "./assets/images/poster-19.jpg",
-    title: "𝙏𝙖𝙠𝙠𝙖𝙣 𝙥𝙚𝙧𝙜𝙞 (𝙨𝙥𝙚𝙚𝙙 𝙪𝙥)",
-    album: "Hyper act",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-19.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-28.jpg",
-    posterUrl: "./assets/images/poster-28.jpg",
-    title: "𝘼𝙙𝙖𝙠𝙖𝙝 𝙞𝙣𝙞 𝙢𝙞𝙢𝙥𝙞",
-    album: "Reedwann",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-28.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-29.jpg",
-    posterUrl: "./assets/images/poster-29.jpg",
-    title: "𝘾𝙞𝙣𝙩𝙖 𝙋𝙖𝙣𝙙𝙖𝙣𝙜 𝙋𝙚𝙧𝙩𝙖𝙢𝙖",
-    album: "Reedwann",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-29.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-20.jpg",
-    posterUrl: "./assets/images/poster-20.jpg",
-    title: "𝙏𝙚𝙧𝙘𝙞𝙥𝙩𝙖 𝙎𝙖𝙩𝙪 𝙎𝙚𝙣𝙮𝙪𝙢𝙖𝙣",
-    album: "Reedwann",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-20.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-21.jpg",
-    posterUrl: "./assets/images/poster-21.jpg",
-    title: "𝘼𝙨𝙖𝙡 𝙆𝙖𝙪 𝘽𝙖𝙝𝙖𝙜𝙞𝙖",
-    album: "Armada",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-21.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-8.jpg",
-    posterUrl: "./assets/images/poster-8.jpg",
-    title: "𝘽𝙖𝙞𝙠 𝙗𝙖𝙞𝙠 𝙨𝙖𝙮𝙖𝙣𝙜",
-    album: "sad",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-8.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-9.jpg",
-    posterUrl: "./assets/images/poster-9.jpg",
-    title: "𝙗𝙞𝙣𝙩𝙖𝙣𝙜 𝙝𝙖𝙩𝙞𝙠𝙪",
-    album: "sad",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-9.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-14.jpg",
-    posterUrl: "./assets/images/poster-14.jpg",
-    title: "𝙨𝙚𝙠𝙚𝙘𝙚𝙬𝙖 𝙞𝙩𝙪",
-    album: "Angga candra",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-14.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-15.jpg",
-    posterUrl: "./assets/images/poster-15.jpg",
-    title: "𝙎𝙚𝙡𝙖𝙢𝙖𝙣𝙮𝙖",
-    album: "Usop",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-15.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-16.jpg",
-    posterUrl: "./assets/images/poster-16.jpg",
-    title: "𝙋𝙚𝙧𝙩𝙖𝙢𝙖 𝙠𝙖𝙡𝙞",
-    album: "shaa",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-16.mp3",
-  },
-   {
-    backgroundImage: "./assets/images/poster-34.jpg",
-    posterUrl: "./assets/images/poster-34.jpg",
-    title: "𝙋𝙚𝙧𝙘𝙖𝙮𝙖 𝙋𝙖𝙙𝙖𝙠𝙪",
-    album: "Ungu",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-34.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-33.jpg",
-    posterUrl: "./assets/images/poster-33.jpg",
-    title: "𝙃𝙖𝙡 𝙃𝙚𝙗𝙖𝙩",
-    album: "Govinda",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-33.mp3",
-  },
-   {
-    backgroundImage: "./assets/images/poster-31.jpg",
-    posterUrl: "./assets/images/poster-31.jpg",
-    title: "𝘼𝙠𝙪 𝙋𝙖𝙨𝙩𝙞 𝙏𝙖𝙪",
-    album: "Bagindas",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-31.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-32.jpg",
-    posterUrl: "./assets/images/poster-32.jpg",
-    title: "𝘼𝙠𝙪 𝙔𝙖𝙣𝙜 𝙟𝙖𝙩𝙪𝙝 𝘾𝙞𝙣𝙩𝙖",
-    album: "Dudy oris",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-32.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-23.jpg",
-    posterUrl: "./assets/images/poster-23.jpg",
-    title: "𝙆𝙪 𝙅𝙪𝙜𝙖 𝙢𝙚𝙣𝙘𝙞𝙣𝙩𝙖𝙞𝙢𝙪",
-    album: "saiful",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-23.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-27.jpg",
-    posterUrl: "./assets/images/poster-27.jpg",
-    title: "𝙎𝙞𝙣𝙖𝙧 𝙋𝙚𝙡𝙖𝙣𝙜𝙞",
-    album: "project band",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-27.mp3",
-  },
-  {
-    backgroundImage: "./assets/images/poster-22.jpg",
-    posterUrl: "./assets/images/poster-22.jpg",
-    title: "𝙎𝙤𝙣𝙜 𝙏𝙞𝙠𝙩𝙤𝙠",
-    album: "TIKTOK",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-22.mp3",
-    },    
-    {  
-    backgroundImage: "./assets/images/poster-7.jpg",
-    posterUrl: "./assets/images/poster-7.jpg",
-    title: "𝙎𝙖𝙙 𝙎𝙤𝙣𝙜 𝙏𝙞𝙠𝙩𝙤𝙠 ♫",
-    album: "Manz diari",
-    year: 2007,
-    artist: "Manz",
-    musicPath: "./assets/music/music-7.mp3",
-  },
-];
+window.addEventListener("load", () => {
+    loadMusic(musicIndex);
+    playingSong();
+})
 
+// load music function
 
-
-/**
- * add eventListnere on all elements that are passed
- */
-
-loadTrack(track_index);
-
-function loadTrack(track_index){
-    clearInterval(updateTimer);
-    reset();
-
-    curr_track.src = music_list[track_index].music;
-    curr_track.load();
-
-    track_art.style.backgroundImage = "url(" + music_list[track_index].img + ")";
-    track_name.textContent = music_list[track_index].name;
-    track_artist.textContent = music_list[track_index].artist;
-    now_playing.textContent = "Playing music " + (track_index + 1) + " of " + music_list.length;
-
-    updateTimer = setInterval(setUpdate, 1000);
-
-    curr_track.addEventListener('ended', nextTrack);
-    random_bg_color();
+function loadMusic(indexNumb) {
+    musicName.innerText = allMusic[indexNumb - 1].name;
+    musicArtist.innerText = allMusic[indexNumb - 1].artist;
+    musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+    mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
 }
 
-function random_bg_color(){
-    let hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e'];
-    let a;
 
-    function populate(a){
-        for(let i=0; i<6; i++){
-            let x = Math.round(Math.random() * 14);
-            let y = hex[x];
-            a += y;
+// play music function
+function playMusic() {
+    container.classList.add("paused");
+    playpauseBtn.querySelector("i").innerText = "pause";
+    mainAudio.play();
+}
+
+// pause music function
+function pauseMusic() {
+    container.classList.remove("paused");
+    playpauseBtn.querySelector("i").innerText = "play_arrow";
+    mainAudio.pause();
+}
+
+
+// Next Music function
+function nextMusic() {
+    musicIndex++; //increment of musicIndex by 1
+    // if musicIndex is greater than array length then musicIndex will be 1 so the first music play
+    musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
+    loadMusic(musicIndex);
+    playMusic();
+    playingSong();
+}
+// Prev Music function
+function prevMusic() {
+    musicIndex--; //increment of musicIndex by 1
+    // if musicIndex is less than array length then musicIndex will be 1 so the first music play
+    musicIndex < 1 ? musicIndex = allMusic.length : musicIndex = musicIndex;
+    loadMusic(musicIndex);
+    playMusic();
+    playingSong();
+}
+
+
+// play or Pause button event
+playpauseBtn.addEventListener("click", () => {
+    const isMusicPaused = container.classList.contains("paused");
+
+    isMusicPaused ? pauseMusic() : playMusic();
+
+});
+
+// next music button event
+nextBtn.addEventListener("click", () => {
+    nextMusic();
+});
+
+
+// prev music button event
+prevBtn.addEventListener("click", () => {
+    prevMusic();
+});
+
+// update progressbar width according to music current time
+mainAudio.addEventListener("timeupdate", (e) => {
+    const currentTime = e.target.currentTime; //getting playing song currenttime
+    const duration = e.target.duration; //getting playing total song duration
+    let progressWidth = (currentTime / duration) * 100;
+    progressBar.style.width = `${progressWidth}%`;
+
+
+
+    let musicCurrentTime = container.querySelector(".current-time"),
+        musicDuration = container.querySelector(".max-duration");
+    mainAudio.addEventListener("loadeddata", () => {
+
+        //  update song total duration
+        let mainAdDuration = mainAudio.duration;
+        let totalMin = Math.floor(mainAdDuration / 60);
+        let totalSec = Math.floor(mainAdDuration % 60);
+        if (totalSec < 10) { //if sec is less than 10 then add 0 before it
+            totalSec = `0${totalSec}`;
         }
-        return a;
-    }
-    let Color1 = populate('#');
-    let Color2 = populate('#');
-    var angle = 'to right';
 
-    let gradient = 'linear-gradient(' + angle + ',' + Color1 + ', ' + Color2 + ")";
-    document.body.style.background = gradient;
-}
-function reset(){
-    curr_time.textContent = "00:00";
-    total_duration.textContent = "00:00";
-    seek_slider.value = 0;
-}
-function randomTrack(){
-    isRandom ? pauseRandom() : playRandom();
-}
-function playRandom(){
-    isRandom = true;
-    randomIcon.classList.add('randomActive');
-}
-function pauseRandom(){
-    isRandom = false;
-    randomIcon.classList.remove('randomActive');
-}
-function repeatTrack(){
-    let current_index = track_index;
-    loadTrack(current_index);
-    playTrack();
-}
-function playpauseTrack(){
-    isPlaying ? pauseTrack() : playTrack();
-}
-function playTrack(){
-    curr_track.play();
-    isPlaying = true;
-    track_art.classList.add('rotate');
-    wave.classList.add('loader');
-    playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-}
-function pauseTrack(){
-    curr_track.pause();
-    isPlaying = false;
-    track_art.classList.remove('rotate');
-    wave.classList.remove('loader');
-    playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
-}
-function nextTrack(){
-    if(track_index < music_list.length - 1 && isRandom === false){
-        track_index += 1;
-    }else if(track_index < music_list.length - 1 && isRandom === true){
-        let random_index = Number.parseInt(Math.random() * music_list.length);
-        track_index = random_index;
-    }else{
-        track_index = 0;
-    }
-    loadTrack(track_index);
-    playTrack();
-}
-function prevTrack(){
-    if(track_index > 0){
-        track_index -= 1;
-    }else{
-        track_index = music_list.length -1;
-    }
-    loadTrack(track_index);
-    playTrack();
-}
-function seekTo(){
-    let seekto = curr_track.duration * (seek_slider.value / 100);
-    curr_track.currentTime = seekto;
-}
-function setVolume(){
-    curr_track.volume = volume_slider.value / 100;
-}
-function setUpdate(){
-    let seekPosition = 0;
-    if(!isNaN(curr_track.duration)){
-        seekPosition = curr_track.currentTime * (100 / curr_track.duration);
-        seek_slider.value = seekPosition;
+        musicDuration.innerText = `${totalMin}:${totalSec}`;
 
-        let currentMinutes = Math.floor(curr_track.currentTime / 60);
-        let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
-        let durationMinutes = Math.floor(curr_track.duration / 60);
-        let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+    });
 
-        if(currentSeconds < 10) {currentSeconds = "0" + currentSeconds; }
-        if(durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
-        if(currentMinutes < 10) {currentMinutes = "0" + currentMinutes; }
-        if(durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
-
-        curr_time.textContent = currentMinutes + ":" + currentSeconds;
-        total_duration.textContent = durationMinutes + ":" + durationSeconds;
+    //update playing song current time
+    let currentMin = Math.floor(currentTime / 60);
+    let currentSec = Math.floor(currentTime % 60);
+    if (currentSec < 10) { //if sec is less than 10 then add 0 before it
+        currentSec = `0${currentSec}`;
     }
+
+    musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
+
+});
+
+// update playing song current width onaccording to the progress bar width
+
+progressArea.addEventListener("click", (e) => {
+    let progressWidth = progressArea.clientWidth; //getting width of progress bar
+    let clickedOffsetX = e.offsetX; //getting offset x value
+    let songDuration = mainAudio.duration; //getting song total duration
+
+    mainAudio.currentTime = (clickedOffsetX / progressWidth) * songDuration;
+    playMusic();
+
+});
+
+// change loop, shufle, repeat icon onclick
+const repeatBtn = container.querySelector("#repeat-plist");
+repeatBtn.addEventListener("click", () => {
+    let getText = repeatBtn.innerText; //getting this tag innerText
+    switch (getText) {
+        case "repeat":
+            repeatBtn.innerText = "repeat_one";
+            repeatBtn.setAttribute("title", "song looped");
+            break;
+        case "repeat_one":
+            repeatBtn.innerText = "shuffle";
+            repeatBtn.setAttribute("title", "playback shuffled");
+            break;
+        case "shuffle":
+            repeatBtn.innerText = "repeat";
+            repeatBtn.setAttribute("title", "playlist looped");
+            break;
+
+    }
+
+});
+
+// above we just change icon, now let's work on what to do after song ended
+mainAudio.addEventListener("ended", () => {
+    let getText = repeatBtn.innerText; //getting this tag innerText
+    switch (getText) {
+        case "repeat":
+            nextMusic(); //calling nect music function
+            break;
+        case "repeat_one":
+            mainAudio.currentTime = 0; //setting audio current time to 0
+            loadMusic(musicIndex); //calling load music function with argument, in the argument there is a  index of current song
+            playMusic(); //calling playMusic Function
+            break;
+        case "shuffle":
+            let randIndex = Math.floor((Math.random() * allMusic.length) + 1);
+            do {
+                randIndex = Math.floor((Math.random() * allMusic.length) + 1);
+            } while (musicIndex == randIndex); //thi loop run until the next random number won't be the same of current musicIndex
+            musicIndex = randIndex; //passing randomIndex to musicIndex
+            loadMusic(musicIndex);
+            playMusic();
+            playingSong();
+            break;
+    }
+});
+
+// show the music list onclick music icon
+
+
+moreMusicBtn.addEventListener("click", () => {
+    musicList.classList.toggle("show");
+});
+closemoreMusic.addEventListener("click", () => {
+    moreMusicBtn.click();
+});
+
+
+const ulTag = container.querySelector("ul");
+
+// let create li tags according to array lenght for list
+
+for (let i = 0; i < allMusic.length; i++) {
+    let liTag = `<li li-index="${i + 1}">
+    <div class="row">
+      <span>${allMusic[i].name}</span>
+      <p>${allMusic[i].artist}</p>
+    </div>
+    <audio class="${allMusic[i].src} " src="songs/${allMusic[i].src}.mp3"></audio>
+    <span id="${allMusic[i].src}" class="audio-duration">1:45</span>
+  </li>`;
+  ulTag.insertAdjacentHTML("beforeend", liTag);
+
+  let liAudioDurationTag = ulTag.querySelector(`#${allMusic[i].src}`);
+  let liAudioTag = ulTag.querySelector(`.${allMusic[i].src}`);
+
+  liAudioTag.addEventListener("loadeddata", () => {
+    let duration = liAudioTag.duration;
+    let totalMin = Math.floor(duration / 60);
+    let totalSec = Math.floor(duration % 60);
+    if (totalSec < 10) { //if sec is less than 10 then add 0 before it
+        totalSec = `0${totalSec}`;
+    }
+
+    liAudioDurationTag.innerText = `${totalMin}:${totalSec}`;
+    // adding t-duration attribute with total duration value
+    liAudioDurationTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
+  });
+
+}
+// play particular song from the list on click of li tag
+
+const allLiTags = ulTag.querySelectorAll("li");
+function playingSong() {
+    for (let j = 0; j < allLiTags.length; j++) {
+   let audioTag = allLiTags[j].querySelector(".audio-duration");
+        // let remove playing class from all other li expect the last one which is clicked
+        if(allLiTags[j].classList.contains("playing")){
+            allLiTags[j].classList.remove("playing");
+        //  let's get that audio duration value and pass to .audio-duration innertext
+        let adDuration = audioTag.getAttribute("t-duration");
+        audioTag.innerText = adDuration;
+        }
+    
+        // if there is an li tag which li index is equal to musicIndex
+        // then this music is playing now and we'll style it
+    
+        if(allLiTags[j].getAttribute("li-index") == musicIndex){
+            allLiTags[j].classList.add("playing");
+            audioTag.innerText = "Playing";
+        }
+    
+        // adding on click attribute in all li tags
+        allLiTags[j].setAttribute("onclick", "clicked(this)");
+    }
+}
+
+// lets play song on click li 
+function clicked(element){
+
+    // getting li index of particular clicked li tag
+    let getLiIndex = element.getAttribute("li-index");
+    musicIndex =  getLiIndex; //passing that liindex to musicIndex
+    loadMusic(musicIndex);
+    playMusic(); 
+    playingSong();
+   
 }
