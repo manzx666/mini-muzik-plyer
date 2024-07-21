@@ -3,8 +3,8 @@ let allMusic = [
 {
     name: "Harley Bird - Home",
     artist: "Jordan Scho",
-    img: "music-1",
-    src: "music-1"
+    img: "./assets/images/poster-10.jpg",
+    src: "./assets/music/music-10.mp3"
 },
 {
     name: "Ikson Anywhere – Ikson",
