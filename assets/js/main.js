@@ -45,6 +45,12 @@ const music_list = [
     artist: "Manz",
     music: "assets/music/music-30.mp3",
   },
+  {
+    img: "assets/images/poster-00.jpg",
+    name: "𝙇𝙤𝙘𝙠𝙚𝙙 𝘼𝙬𝙖𝙮",
+    artist: "Manz",
+    music: "assets/music/music-00.mp3",
+  },
    {
     img: "assets/images/poster-19.jpg",
     name: "𝙏𝙖𝙠𝙠𝙖𝙣 𝙥𝙚𝙧𝙜𝙞 (𝙨𝙥𝙚𝙚𝙙 𝙪𝙥)",
