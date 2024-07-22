@@ -51,6 +51,12 @@ const music_list = [
     artist: "Manz",
     music: "assets/music/music-00.mp3",
   },
+  {
+    img: "assets/images/poster-001.jpg",
+    name: "𝙎𝙤𝙢𝙚𝙗𝙤𝙙𝙮'𝙨 𝙋𝙡𝙚𝙖𝙨𝙪𝙧𝙚",
+    artist: "Manz",
+    music: "assets/music/music-001.mp3",
+  },
    {
     img: "assets/images/poster-19.jpg",
     name: "𝙏𝙖𝙠𝙠𝙖𝙣 𝙥𝙚𝙧𝙜𝙞 (𝙨𝙥𝙚𝙚𝙙 𝙪𝙥)",
