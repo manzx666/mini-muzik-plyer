@@ -57,6 +57,12 @@ const music_list = [
     artist: "Manz",
     music: "assets/music/music-001.mp3",
   },
+  {
+    img: "assets/images/poster-004.jpg",
+    name: "𝙧𝙚𝙥𝙡𝙖𝙮",
+    artist: "Manz",
+    music: "assets/music/music-004.mp3",
+  },
    {
     img: "assets/images/poster-002.jpg",
     name: "𝙋𝙚𝙧𝙛𝙚𝙘𝙩",
