@@ -22,6 +22,12 @@ let updateTimer;
 
 const music_list = [
   {
+    img: "assets/images/poster-005.jpg",
+    name: "𝙆𝙖𝙩𝙮 𝙥𝙖𝙧𝙮 𝙬𝙞𝙙𝙚 𝙖𝙬𝙖𝙠𝙚",
+    artist: "Manz",
+    music: "assets/music/music-005.mp3",
+  },
+  {
     img: "assets/images/poster-10.jpg",
     name: "𝘿𝙧𝙪𝙣𝙠 𝙏𝙚𝙭𝙩",
     artist: "Manz",
