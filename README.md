@@ -10,4 +10,9 @@ loadstring(game:HttpGet("https://paste.ee/r/eTCCYqn9"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
 
+https://vt.tiktok.com/ZSkxcBdr4/
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/kosowa/asd/refs/heads/main/GaG.lua"))()
+
+
+
