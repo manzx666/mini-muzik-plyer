@@ -14,5 +14,6 @@ https://vt.tiktok.com/ZSkxcBdr4/
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/kosowa/asd/refs/heads/main/GaG.lua"))()
 
+https://vt.tiktok.com/ZSk47Da2k/
 
 
