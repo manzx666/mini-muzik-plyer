@@ -17,3 +17,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/kosowa/asd/refs/heads
 https://vt.tiktok.com/ZSk47Da2k/
 
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/meijinemiko/sc/refs/heads/main/sp"))()
